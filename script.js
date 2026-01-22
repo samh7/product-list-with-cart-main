@@ -1,17 +1,5 @@
 const cart = document.querySelector(".main-container .cart")
 
-const list = [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 122, 12, 12, 12, 12, 21,]
-
-list.forEach(_ => {
-  const cartItem = document.createElement("DIV")
-  cartItem.innerHTML = createCartItem("Classic Tiramisu", "6.50", "4")
-  cartItem.classList.add("cart-contents")
-
-  cart.querySelector(".cart-items").appendChild(cartItem)
-});
-
-
-
 const removeItemsFromCart = document.querySelectorAll(".cart-contents .remove-item-from-cart")
 const addToCartButtons = document.querySelectorAll(".add-to-cart")
 
